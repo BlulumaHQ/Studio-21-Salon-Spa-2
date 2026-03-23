@@ -4,12 +4,9 @@ import { Menu, X, Phone } from "lucide-react";
 
 const navItems = [
   { label: "Home", path: "/" },
-  { label: "Grooming Packages", path: "/grooming-packages" },
-  { label: "Self Service Wash", path: "/self-service-wash" },
   { label: "Products", path: "/products-accessories" },
   { label: "Gallery", path: "/dog-gallery" },
   { label: "About Us", path: "/our-salon-about-us" },
-  { label: "Help Wanted", path: "/help-wanted" },
   { label: "Contact Us", path: "/contact-us" },
 ];
 
