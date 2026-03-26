@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import PreviewSystem from "./components/preview/PreviewSystem";
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import GroomingPackagesPage from "./pages/GroomingPackagesPage";
@@ -23,21 +22,19 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <PreviewSystem>
-          <Routes>
-            <Route element={<Layout />}>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/grooming-packages" element={<GroomingPackagesPage />} />
-              <Route path="/self-service-wash" element={<SelfServiceWashPage />} />
-              <Route path="/products-accessories" element={<ProductsPage />} />
-              <Route path="/dog-gallery" element={<GalleryPage />} />
-              <Route path="/our-salon-about-us" element={<AboutPage />} />
-              <Route path="/contact-us" element={<ContactPage />} />
-              <Route path="/help-wanted" element={<HelpWantedPage />} />
-            </Route>
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </PreviewSystem>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/grooming-packages" element={<GroomingPackagesPage />} />
+            <Route path="/self-service-wash" element={<SelfServiceWashPage />} />
+            <Route path="/products-accessories" element={<ProductsPage />} />
+            <Route path="/dog-gallery" element={<GalleryPage />} />
+            <Route path="/our-salon-about-us" element={<AboutPage />} />
+            <Route path="/contact-us" element={<ContactPage />} />
+            <Route path="/help-wanted" element={<HelpWantedPage />} />
+          </Route>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
