@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import PreviewSystem from "./components/preview/PreviewSystem";
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import GroomingPackagesPage from "./pages/GroomingPackagesPage";
@@ -23,7 +22,6 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <PreviewSystem>
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<HomePage />} />
@@ -37,7 +35,6 @@ const App = () => (
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
-        </PreviewSystem>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
