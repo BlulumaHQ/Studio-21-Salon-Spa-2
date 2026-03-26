@@ -23,7 +23,6 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<HomePage />} />
