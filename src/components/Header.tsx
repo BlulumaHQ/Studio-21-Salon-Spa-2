@@ -33,7 +33,6 @@ const Header = () => {
           ? "bg-primary/95 backdrop-blur-md shadow-lg"
           : "bg-primary/80 backdrop-blur-sm"
       }`}
-      style={{ top: "40px" }}
     >
       <div className="container-site flex items-center justify-between h-20">
         <Link to="/" className="flex items-center gap-3 shrink-0">
